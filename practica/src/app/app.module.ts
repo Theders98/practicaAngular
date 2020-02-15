@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,9 +19,11 @@ import { PokemonsComponent } from './components/pokemons/pokemons.component';
     ErrorComponent,
     HeaderComponent,
     ContentComponent,
-    PokemonsComponent
+    PokemonsComponent,
+
   ],
   imports: [
+    NgbModule,
     BrowserModule,
     AppRoutingModule
   ],

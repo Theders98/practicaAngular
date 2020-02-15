@@ -9,23 +9,20 @@ pokemon
 export class PersonajesService {
 
   constructor() { }
-
-
-
-}
-export function getPersonajes() {
-  
+    
   personajes: personaje[] = [
-    { id: 11, name: 'Dr Nice' },
-    { id: 12, name: 'Narco' },
-    { id: 13, name: 'Bombasto' },
-    { id: 14, name: 'Celeritas' },
-    { id: 15, name: 'Magneta' },
-    { id: 16, name: 'RubberMan' },
-    { id: 17, name: 'Dynama' },
-    { id: 18, name: 'Dr IQ' },
-    { id: 19, name: 'Magma' },
-    { id: 20, name: 'Tornado' }
+    { id: 11, name: 'Goku' },
+    { id: 12, name: 'Bardock' },
+    { id: 13, name: 'Broly' },
+    { id: 14, name: 'Vegeta' },
+    { id: 15, name: 'Freezer' },
+    { id: 16, name: 'Truks' },
+    { id: 17, name: 'Zenos' },
+    { id: 18, name: 'Goku Black' },
+    { id: 19, name: 'Zamasu' },
+    { id: 20, name: 'Kale' }
   ];
-  return this.personajes;
+  getPersonajes(){
+    return this.personajes;
+  }
 }

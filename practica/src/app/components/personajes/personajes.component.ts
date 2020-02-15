@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { getPersonajes, PersonajesService } from 'src/app/services/personajes.service';
+import {  PersonajesService } from 'src/app/services/personajes.service';
+import { personaje } from 'src/app/models/personaje';
 
 
 
@@ -10,12 +11,12 @@ import { getPersonajes, PersonajesService } from 'src/app/services/personajes.se
 })
 export class PersonajesComponent implements OnInit {
 
-  constructor() {
-  
-    let personajes = getPersonajes()
-   }
+  personajes : personaje [];
+
+  constructor(private personajesService : PersonajesService) { }
 
   ngOnInit() {
+    this.personajes = this.personajesService.getPersonajes();
   }
 
 }
